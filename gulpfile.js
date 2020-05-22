@@ -102,7 +102,7 @@ function twigBuild() {
   gulp.task(
     "reloadHtml",
     gulp.series([twigHtml], function() {
-      gulp.watch(pathss.root.templatePages + "**/*.twig", browserSync.reload);
+      gulp.watch(paths.root.templatePages + "**/*.twig", browserSync.reload);
       gulp.watch("**/*.html", browserSync.reload);
     })
   );
